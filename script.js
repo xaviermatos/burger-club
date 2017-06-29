@@ -1,9 +1,15 @@
 $(document).ready(function() {
 
 $(".btn").click(function(){
-    var email = $(".form-control").val();
-    alert("thank you " + email );
-})
+    var name = $(".form-control").val();
+    var email = $(".form-controle").val();
+    alert("thank you " + name + " for signing up! We will send an email to " + email +" shortly");
+});
+
+$("#f").hover(function() {
+    $("#f").toggle( "bounce", { times: 3 }, "slow" ); 
+  });
+
 });
 
     
