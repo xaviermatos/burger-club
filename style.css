@@ -1,8 +1,9 @@
-/*body {*/
-/*  padding-top: 50px;*/
-/*  	background-color: #D62F01;*/
-/*    border-color: #D62F01;*/
-/*}*/
+body {
+ padding-top: 50px;
+ background-color: #D62F01;
+ border-color: #D62F01;
+ font-family: 'Rubik', sans-serif;
+}
 
 .navbar {
 	background-color: #D62F01;
@@ -10,9 +11,11 @@
 }
 
 .navbar-nav li a{
-    color: #FFFFFF;
+    color: white;
 }
-
+.navbar-nav li a:hover{
+    color:#D62F01;
+}
 
 .navbar-brand {
     color: #FFFFFF;
@@ -110,7 +113,22 @@ img {
     margin-top: 75px;
     background-color: #FFFFFF;
 }
-
- p {
-    
+.burgers{
+    background-color: black;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+    border-radius:25px;
+}
+.love{
+    background-color: black;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
+    border-radius:25px;
  }
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      height:auto;
+      margin: auto;
+  }
+  .footer{
+      padding: 150px;
+  }
