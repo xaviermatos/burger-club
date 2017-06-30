@@ -18,6 +18,7 @@ body {
 	background-color: #D62F01;
     border-color: #D62F01;
     box-shadow: 2px 5px 2px white;
+    
 }
 
 .navbar-nav li a{
@@ -28,6 +29,8 @@ body {
 }
 
 .navbar-brand {
+     text-decoration: underline; 
+    text-decoration-style: wavy; 
     font-size: 30px;
     font-weight:bold;
     color: #FFFFFF;
@@ -125,7 +128,8 @@ img {
 
 #location-list{
     margin-top: 75px;
-
+    background-color: #D62F01;
+    color:white;
 }
 .burgers{
     padding:10px;
@@ -139,6 +143,7 @@ img {
     background-color: black;
     background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
     border-radius:25px;
+    margin-top: 50px
  }
  .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -150,11 +155,12 @@ img {
 
   }
   .btn {
-      margin-bottom: -305%;
+      margin-bottom: -75%, 8px;
       background-color: #D62F01;
       border:2px solid white;
       box-shadow: 5px 5px 5px black;
-      margin-left: 68%;
+      margin-left: 0%;
+     
      
   }
     .btn:hover{
@@ -164,13 +170,46 @@ img {
     }
     
   .footer{
-      padding: 150px;
+      padding: 1px;
   }
   
  .btn-lg{
      margin-left: 43%;
  }
- .contact{
-      margin-top: 255px;
-    position:absolute;
+
+ .container2{
+      margin-top: 105px;
+    position:relative;
+   
  }
+ 
+ .modal-body {
+     color: black;
+ }
+ 
+ .media_btn .med :hover{
+	transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+	transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+}
+
+ 
+ 
+.col-sm-3 {
+    width: 100%;
+    margin-top: 0%
+}
+
+.small {
+    margin-bottom: 0%;
+}
+
+.btn-lg {
+    margin-top: 26%;
+    padding: 25px;
+}
