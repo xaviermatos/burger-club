@@ -5,10 +5,11 @@
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="icon" href="../images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
+      /* Always set the map height explicitly to define the size of the div*/
+       /* element that contains the map. */
       /* Optional: Makes the sample page fill the window. */
       #map {
         height: 100%;
@@ -43,12 +44,14 @@
       </div>
     </nav>
     <div class="col-sm-3" id="location-list">
-      <p>Address: 32-02 30th Ave, Astoria, NY 11102 </p>
+      <p><b>Address:</b> 32-02 30th Ave, Astoria, NY 11102 </p>
+      <p>New Location: 85 Broad St. New York, New York</p>
       <p>Hours:11:30AM–11:30PM</p>
       <p>Phone: (718) 777-7788</p>
       <hr>
     </div>
-    
+    <!--40.704038°
+Longitude:-74.011597°-->
     <!--<div class="col-sm-9">-->
       <div id="map"></div>
     <!--</div>-->
@@ -58,15 +61,21 @@
     <script>
       var map;
       function initMap() {
-        var uluru = {lat: 40.7661763, lng: -73.9206756};
+        var uluru = {lat: 40.7661763, lng: -73.9206756 };
+        var scriptEd= {lat: 40.704038, lng: -74.011597 };
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
-          center: uluru
+          center: uluru, 
+          center2:scriptEd,
         });
         var marker = new google.maps.Marker({
           position: uluru,
           map: map
         });
+           var marker = new google.maps.Marker({
+          position: scriptEd,
+          map: map
+           });
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJWN3KKLlUl6-LcBZVVfGKMamX_KwjbKA&callback=initMap"

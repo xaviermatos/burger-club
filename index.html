@@ -19,6 +19,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 </head>
 
@@ -49,10 +50,8 @@
   <!-- Main component for a primary marketing message or call to action -->
 
   <div class="container">
-    <h1 class="burgers">Burgers for the Whole Family</h1>
-    <p class="love"> Our Love and passion for comfort food and our love and passion for hospitality drove us to find Burger Club. We have spared no expense in sourcing our ingredients for the local specialties bought from independent purveyors here in Astoria, to the
-     local fresh rolls baked for us every day, to the ultra deluxe custom blend created specifically for us by celebrated butcher PAT LA FRIEDA.</p>
-    <p>
+   
+    
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
             <div class="jumbotron">
@@ -75,6 +74,9 @@
             <div class="item">
               <img src="http://ucdintegrativemedicine.com/wp-content/uploads/Aug-21_BurgerDay_Header8CUTFB2_35406006.png" alt="New York">
             </div>
+             <h1 class="burgers">Burgers for the Whole Family</h1>
+    <p class="love"> Our Love and passion for comfort food and our love and passion for hospitality drove us to find Burger Club. We have spared no expense in sourcing our ingredients for the local specialties bought from independent purveyors here in Astoria, to the
+     local fresh rolls baked for us every day, to the ultra deluxe custom blend created specifically for us by celebrated butcher PAT LA FRIEDA.</p>
           </div>
 
           <!-- Left and right controls -->
@@ -96,6 +98,7 @@
     <div class="container">
       <div class="col-sm-3">
         <p class="lead">
+    <div class = "contact">  
           Visit Us
         </p>
         <p>Address: 32-02 30th Ave, Astoria, NY 11102 </p>
@@ -104,10 +107,13 @@
       </div>
       <div class="col-sm-3">
         <p class="lead">Contact Us</p>
-        <input class="form-controle" type="text" name="name" placeholder="Your Name" />
-        <input class="form-controle" type="text" name="email" placeholder="E-mail" />
-        <button class="btn">Sign up</button>
+        <form action="https://formspree.io/@xmatos@aoiths.org" method="POST" target="_blank">
+        <input type = "text" class="form-controle form"  name="name" placeholder="Your Name" />
+        <input class="form-controle form2" type="email" name="email" placeholder="E-mail" name="_replyto"/>
+        <button type ="submit" class="btn" value="Send">Sign up</button>
+        </form>
       </div>
+          <div class = "contact">  
       <section id="social">
         <div class="col-sm-6">
           </br>
@@ -128,13 +134,30 @@
             </a>
             </div>
             <div id = "l">
-            <a href = "https://www.linkedin.com/https://www.instagram.com/burgerclubnyc/" target="_blank">
-            <li><img src="images/linkedin.svg" alt="LinkedIn" /></li>
+            <a href = "https://www.linkedin.com/" target="_blank">
+            <li><img src="images/linkedin.svg" alt="LinkedIn"/></li>
             </a>
             </div>
+            </div>
           </ul>
+        
         </div>
       </section>
+    </div>
+      <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is a small modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
   </div>
 

@@ -6,7 +6,12 @@ body {
  font-family: 'Rubik', sans-serif;
  color:white;
 }
+
 .form-controle{
+    color:black;
+}
+
+.form-control{
     color:black;
 }
 .navbar {
@@ -120,7 +125,7 @@ img {
 
 #location-list{
     margin-top: 75px;
-    background-color: #FFFFFF;
+
 }
 .burgers{
     padding:10px;
@@ -130,6 +135,7 @@ img {
 }
 .love{ 
     padding:10px;
+    color:white;
     background-color: black;
     background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
     border-radius:25px;
@@ -140,12 +146,15 @@ img {
       height:460px;
       margin: auto;
       position: relative;
+      width: 100%;
+
   }
   .btn {
-      margin-bottom: -220px;
+      margin-bottom: -305%;
       background-color: #D62F01;
       border:2px solid white;
       box-shadow: 5px 5px 5px black;
+      margin-left: 68%;
      
   }
     .btn:hover{
@@ -153,12 +162,15 @@ img {
        background-color: white;
        border:2px solid #D62F01;
     }
+    
   .footer{
       padding: 150px;
   }
-#w {
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-  background-color: black;
-}
+  
+ .btn-lg{
+     margin-left: 43%;
+ }
+ .contact{
+      margin-top: 255px;
+    position:absolute;
+ }
